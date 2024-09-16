@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    height: 100%;
+    width: 1000px;
+    margin: 0 auto;
+}
+figure{
+    width: 30%;
+    position: relative;
+    
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 30px;
+}
+.container h1{
+    text-align: center;
+    padding-top: 20px;
+}
+figcaption{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+.zoom-image {
+    transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+}
